@@ -3,7 +3,7 @@ require 'pry'
 
 def load_library (file)
   hashao=YAML.load_file(file)
-  #binding.pry
+  binding.pry
 end
 
 def get_japanese_emoticon
