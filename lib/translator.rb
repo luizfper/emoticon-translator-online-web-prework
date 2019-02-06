@@ -20,7 +20,7 @@ def get_japanese_emoticon (file,emoticon)
   binding.pry
   if english=nil
    english= "Sorry, that emoticon was not found"
- end 
+ end
  english
 end
 
