@@ -2,7 +2,11 @@ require 'yaml'
 require 'pry'
 
 def load_library (file)
+  fin_hashao={}
+  fin_hashao[:get_meaning]={}
+  fin_hashao[:get_emoticon]={}
   hashao=YAML.load_file(file)
+  hashao.each
   binding.pry
 end
 
