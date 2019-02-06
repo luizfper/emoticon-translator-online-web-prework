@@ -2,8 +2,8 @@ require 'yaml'
 require 'pry'
 
 def load_library (file)
-  array=YAML.load_file(file)
-  binding.pry
+  hashao=YAML.load_file(file)
+  #binding.pry
 end
 
 def get_japanese_emoticon
