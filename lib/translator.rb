@@ -6,7 +6,10 @@ def load_library (file)
   fin_hashao[:get_meaning]={}
   fin_hashao[:get_emoticon]={}
   hashao=YAML.load_file(file)
-  hashao.each
+  hashao.each do |meaning,emoticons|
+    fin_hashao[:get_meaning][emoticons[1]]=meaning
+    fin_hashao[:get_emoticon][meaning]=emoticons[1]
+  end
   binding.pry
 end
 
