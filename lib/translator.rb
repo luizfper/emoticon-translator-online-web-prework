@@ -15,12 +15,10 @@ end
 
 def get_japanese_emoticon (file,emoticon)
   dictionary=load_library(file)
-  english=""
-  if dictionary["get_emoticon"][emoticon]!=nil
-    return english
-  else
-    return "Sorry, that emoticon was not found"
-  end
+  english=dictionary["get_emoticon"][emoticon]
+  
+  #  return "Sorry, that emoticon was not found"
+  
 end
 
 def get_english_meaning
