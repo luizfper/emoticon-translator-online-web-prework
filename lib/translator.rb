@@ -16,10 +16,10 @@ end
 def get_japanese_emoticon (file,emoticon)
   dictionary=load_library(file)
   english=""
-  if english!=nil
-    english = dictionary["get_emoticon"][emoticon]
+  if dictionary["get_emoticon"][emoticon]!=nil
+    english
   else
-    "Sorry, "
+    "Sorry, that emoticon was not found"
   end
 end
 
