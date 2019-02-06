@@ -10,7 +10,7 @@ def load_library (file)
     fin_hashao[:get_meaning][emoticons[1]]=meaning
     fin_hashao[:get_emoticon][emoticons[0]]=emoticons[1]
   end
-  binding.pry
+  fin_hashao
 end
 
 def get_japanese_emoticon
