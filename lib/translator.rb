@@ -17,7 +17,7 @@ def get_japanese_emoticon (file,emoticon)
   dictionary=load_library(file)
   english=""
   english=dictionary["get_emoticon"][emoticon]
-  binding.pry
+  #binding.pry
   if english=nil
    english= "Sorry, that emoticon was not found"
  end
